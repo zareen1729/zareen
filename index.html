@@ -6,19 +6,37 @@
     <meta name="description" content="DevOps/SRE Portfolio">
     <title>DevOps/SRE Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevOps/SRE Portfolio">
+    <title>DevOps/SRE Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         .about-container {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 20px;
+            flex-wrap: wrap;
         }
         .about-container img {
-            width: 200px;
+            max-width: 300px;
             height: auto;
             border-radius: 10px;
         }
         .about-text {
-            max-width: 500px;
+            max-width: 600px;
+        }
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-text {
+                text-align: center;
+            }
         }
     </style>
 </head>

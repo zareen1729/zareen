@@ -42,3 +42,4 @@ body { font-family:"DM Sans",ui-sans-serif,system-ui,sans-serif; }
 .writing-notes a { transition:transform .2s,box-shadow .2s,border-color .2s; }
 .writing-notes a:hover { transform:translateY(-3px); border-color:#9ccfca; box-shadow:0 12px 24px #14213212; }
 @media (max-width:520px) { .cert-card img { width:40px; height:40px; } }
+.hero-portrait img { object-position:50% 7%; }

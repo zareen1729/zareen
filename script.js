@@ -1,2 +1,14 @@
-/* script.js */
-console.log('Welcome to my Zareen's DevOps/SRE Portfolio Website!');
+const menuToggle = document.querySelector(".menu-toggle");
+const siteNav = document.querySelector(".site-nav");
+
+menuToggle?.addEventListener("click", () => {
+  const open = siteNav?.classList.toggle("is-open") ?? false;
+  menuToggle.setAttribute("aria-expanded", String(open));
+});
+
+siteNav?.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    siteNav.classList.remove("is-open");
+    menuToggle?.setAttribute("aria-expanded", "false");
+  });
+});
